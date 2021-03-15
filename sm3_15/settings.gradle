@@ -1,0 +1,3 @@
+include ':listviewtest'
+include ':app'
+rootProject.name = "sm3_15"
