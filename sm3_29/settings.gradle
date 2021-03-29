@@ -1,0 +1,5 @@
+include ':listviewtest'
+include ':sqlitetest'
+include ':app:sqlitetest'
+include ':app'
+rootProject.name = "sm3_29"
