@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/main_item_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hong"/>
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="김 비서가 왜 그럴까1"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/main_item_person"/>
+    <TextView
+        android:id="@+id/item_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20218-09-25 8.0MB"
+        android:layout_below="@+id/item_title"
+        android:layout_alignLeft="@+id/item_title"/>
+    <ImageView
+        android:id="@+id/item_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_cloud_download_24"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

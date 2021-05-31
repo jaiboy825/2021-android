@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".DisplayCallLogActivity">
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[연락처 내용]"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginBottom="40dp"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/name_title"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/main_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="이름:"
+        android:textSize="25dp"></TextView>
+
+    <EditText
+        android:id="@+id/editName"
+
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/main_title"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/name_title"
+        android:hint="홍길동"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/time_title"
+
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/name_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="경과시간:"
+        android:textSize="25dp"></TextView>
+
+    <EditText
+        android:id="@+id/editDate"
+
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/name_title"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/time_title"
+        android:hint="휴대전화, 1일전"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/phone_title"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/time_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="핸드폰 번호:"
+        android:textSize="25dp"></TextView>
+
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/time_title"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/phone_title"
+        android:hint="0101245678"
+        android:textSize="25dp" />
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저장하기"
+        android:layout_alignParentBottom="true"
+        />
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수정하기"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        />
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="삭제하기"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
